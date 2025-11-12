@@ -1,0 +1,163 @@
+.artist-page-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 20px;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .artist-page-container {
+    margin-top: -80px;
+    padding-top: 180px; 
+    position: relative;
+    z-index: 0;
+  }
+  
+  .animated-purple-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #5f2c82, #2c2c54);
+    background-size: 400% 400%;
+    animation: pulse-bg 10s ease infinite;
+    z-index: -1;
+  }
+  
+  @keyframes pulse-bg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .artist-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .artist-heading {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+  }
+  
+  .artist-details-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(30, 30, 60, 0.7);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .artist-image {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 3px solid #a29bfe;
+    transition: transform 0.3s;
+  }
+  .artist-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .artist-info-list {
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .artist-info-row {
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info-key {
+    font-weight: bold;
+    color: #dcd6f7;
+    text-transform: capitalize;
+  }
+  
+  .info-value {
+    color: #ffffff;
+    padding-left: 10px;
+  }
+  
+  .loading-text, .error-text {
+    font-size: 1.2rem;
+    color: #f8d7da;
+    background-color: rgba(100, 0, 0, 0.4);
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* Wavy Background Like Contact Page */
+.wave-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  
+  .wave {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    animation: waveMotion 10s linear infinite;
+    filter: blur(1.5px);
+    opacity: 0.8;
+    background-size: cover;
+  }
+  
+  .wave1 {
+    top: 0;
+    animation-delay: 0s;
+    background: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' stop-color='%23ff5f6d'/><stop offset='25%' stop-color='%23ffc371'/><stop offset='50%' stop-color='%2345f3ff'/><stop offset='75%' stop-color='%23ff6ec4'/><stop offset='100%' stop-color='%23a18cd1'/></linearGradient></defs><path fill='url(%23grad1)' fill-opacity='0.15' d='M0,64L40,69.3C80,75,160,85,240,90.7C320,96,400,96,480,101.3C560,107,640,117,720,133.3C800,149,880,171,960,160C1040,149,1120,107,1200,85.3C1280,64,1360,64,1400,64L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z'/></svg>");
+  }
+  
+  .wave2 {
+    top: 80px;
+    animation-delay: 3s;
+    opacity: 0.6;
+    background: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='grad2' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' stop-color='%23ff9a9e'/><stop offset='25%' stop-color='%23fad0c4'/><stop offset='50%' stop-color='%23fbc2eb'/><stop offset='75%' stop-color='%23a1c4fd'/><stop offset='100%' stop-color='%23c2e9fb'/></linearGradient></defs><path fill='url(%23grad2)' fill-opacity='0.12' d='M0,160L40,149.3C80,139,160,117,240,128C320,139,400,181,480,170.7C560,160,640,96,720,101.3C800,107,880,181,960,197.3C1040,213,1120,181,1200,149.3C1280,117,1360,85,1400,69.3L1440,53.3L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z'/></svg>");
+  }
+  
+  .wave3 {
+    top: 160px;
+    animation-delay: 6s;
+    opacity: 0.4;
+    background: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' stop-color='%23f6d365'/><stop offset='25%' stop-color='%23fda085'/><stop offset='50%' stop-color='%23fbc2eb'/><stop offset='75%' stop-color='%23a6c1ee'/><stop offset='100%' stop-color='%23d4fc79'/></linearGradient></defs><path fill='url(%23grad3)' fill-opacity='0.1' d='M0,96L40,122.7C80,149,160,203,240,197.3C320,192,400,128,480,106.7C560,85,640,107,720,106.7C800,107,880,85,960,74.7C1040,64,1120,64,1200,80C1280,96,1360,128,1400,144L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z'/></svg>");
+  }
+  
+  @keyframes waveMotion {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
